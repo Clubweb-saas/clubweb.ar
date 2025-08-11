@@ -23,6 +23,7 @@
 /*Grid xl Start*/
 @media (max-width: 1399px) { 
   .fancy-feature-thirtyFive .img-holder .card-style {padding: 20px 0 15px;}
+  .pricing-table-area-four {padding: 20px;} 
   .pricing-table-area-four .pr-table-wrapper {padding: 20px;}
   .pricing-table-area-four .pr-table-wrapper .top-banner span {font-size: 20px;}
   .pricing-table-area-four .pr-table-wrapper .top-banner {padding: 6px 14px;}
@@ -687,7 +688,7 @@
   .partner-section-one .img-box.bx-g {width: 160px; height: 160px;}
   .footer-style-two .shape-one {width: 100px; height: 100px; left: -12px; top: -50px;}
   .footer-style-two .shape-two {width: 50px; height: 50px; bottom: 0; right: -12px;}
-  .footer-style-two .top-footer {padding: 60px 20px 20px;}
+  .footer-style-two .top-footer {padding: 40px 20px 20px;}
   .footer-style-two .bottom-footer {padding: 20px 0 0;}
   .hero-banner-three .mobile-screen {position: static; max-width: 500px; margin: 20px auto 0; width: 100%;}
   .title-style-four .sc-title {font-size: 16px; padding-bottom: 16px;}
