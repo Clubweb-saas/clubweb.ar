@@ -38,7 +38,7 @@
 :root {
   --text-color    : #0D1A0D;
   --heading       : #0D1A0D;
-  --prime-one     : #0D1A0D;
+  --prime-one     : #1C1B22;
   --prime-two     : #476447;
   --prime-three   : #F5F6F9;
   --prime-four    : #878787;
@@ -4523,7 +4523,10 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 .slick-arrow-four li:hover {background: #fff;}
 .slick-arrow-four li:hover:after {top: 0; left: 0;}
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section Twenty Five ^^^^^^^^^^^^^^^^^^^^^^^^*/
-.accordion-style-two {border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+.accordion-style-two {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
 .accordion-style-two .accordion-item {
   background: #FFFFFF;
   border: none;
@@ -4536,15 +4539,18 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
   padding: 32px 0;
   box-shadow: none;
   border-radius: 0;
-  color: #000;
+  color: var(--prime-one);
   background: transparent;
   transition: all 0.3s ease-in-out;
 }
-.accordion-style-two .accordion-item .accordion-button:not(.collapsed) {padding-bottom: 12px;}
-.accordion-style-two .accordion-body {padding: 0 40px 20px 0;}
+.accordion-style-two .accordion-item .accordion-button:not(.collapsed) {padding-bottom: 20px;}
+.accordion-style-two .accordion-body {text-align: justify; padding: 0 40px 20px 0;}
 .accordion-style-two .accordion-body p {font-size: 18px;line-height: 34px;}
 .accordion-style-two .accordion-button::after {
   content: url(../images/icon/icon_74.svg);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 0.5px solid var(--prime-three);
   background-image: none;
   width: auto;
   height: auto;
