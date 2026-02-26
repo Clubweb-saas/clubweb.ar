@@ -43,11 +43,11 @@
   --prime-three   : #F5F6F9;
   --prime-four    : #878787;
   --prime-five    : #007BFF;
-  --prime-six     : #4397ff;
+  --prime-six     : #4d9dff;
   --prime-seven   : #bebebe;
   --prime-eight   : #FFED4E;
   --prime-nine    : #FF1292;
-  --prime-ten     : #51BE51;
+  --prime-ten     : #6ae66a;
   --prime-eleven  : #CFFBCF;
   --prime-twelve  : #FFE500;
 }
@@ -4248,8 +4248,19 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
   transition: all 0.1s ease-in-out;  
 }
 .pricing-table-area-four .pr-table-wrapper .pack-name {
+  background-color: var(--prime-six);
+  color: #FFF;
+  font-size: 14px;
+  padding: 4px 14px;
+  border-radius: 25px;
+}
+.pricing-table-area-four .pr-table-wrapper .pack-name-two {
+  background-color: var(--prime-eleven);
   color: var(--prime-one);
   font-size: 14px;
+  padding: 4px 14px;
+  border-radius: 25px;
+  margin-left: 5px;
 }
 .pricing-table-area-four .pr-table-wrapper .pack-details {
   color: var(--prime-four);
@@ -4262,10 +4273,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 }
 .pricing-table-area-four .pr-table-wrapper.full-width .pack-details {padding-bottom: 20px;}
 .pricing-table-area-four .pr-table-wrapper .top-banner {
-  background-color: var(--prime-eleven);
-  color: var(--prime-one);
   text-align: left;
-  padding: 4px 14px;
   border-radius: 20px;
   max-width: fit-content;
 }
@@ -4276,7 +4284,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 }
 .pricing-table-area-four .pr-table-wrapper .price span {
   font-size: 16px;
-  color: var(--prime-four);
+  color: #505050;
 }
 .pricing-table-area-four .pr-table-wrapper .top-banner span  {font-size: 22px;}
 .pricing-table-area-four .pr-table-wrapper .top-banner em {
