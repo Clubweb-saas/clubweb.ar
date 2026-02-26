@@ -5222,8 +5222,10 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
   font-weight: 700;
 }
 .partner-section-five .wrapper {
-  width: 1660px;
+  width: 100%;
+  max-width: 1660px;
   padding: 0 12px;
+  margin: 0 auto;
 }
 .partner-section-five .logo-wrapper {
   font-size: 30px;
