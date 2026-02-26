@@ -2386,8 +2386,8 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 .footer-style-two {background-color: var(--prime-eleven); padding: 0 10%;}
 .footer-style-two .top-footer {
   border: 1px dashed var(--prime-one);
-  border-radius: 32px;
-  padding: 40px 0px 20px;
+  border-radius: 40px;
+  padding: 40px 50px 20px;
   z-index: 1;
 }
 .footer-style-two .inner-wrapper {max-width: 1170px;}
