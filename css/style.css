@@ -265,6 +265,7 @@ p {line-height: 1.4em;}
 .title-style-three .main-title {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 40px; 
+  font-weight: 700;
   margin: 0;
   letter-spacing: 0px;
 }
