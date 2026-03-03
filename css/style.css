@@ -1579,7 +1579,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Footer One ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .footer-style-one {padding-top: 150px;}
-.theme-basic-footer .footer-title {font-size: 22px}
+.theme-basic-footer .footer-title {font-size: 18px}
 .theme-basic-footer .footer-nav-link a {
   color: var(--prime-one);
   font-size: 15px;
@@ -1591,7 +1591,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
   font-size: 15px;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 .footer-style-one .shape-one {
   width: 85px;
