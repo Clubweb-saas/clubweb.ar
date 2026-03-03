@@ -51,7 +51,7 @@
   .hero-banner-three .hero-heading {font-size: 70px;}
   .hero-banner-eight .hero-heading {font-size: 75px;}
   .hero-banner-six .hero-heading {font-size: 70px;}
-  .title-style-five .main-title,.fancy-short-banner-fifteen .title {font-size: 50px;}
+  .page-title-style .main-title,.fancy-short-banner-fifteen .title {font-size: 50px;}
   .inner-banner-one .title {font-size: 60px;}
   .title-style-thirteen .main-title {font-size: 50px;}
   .title-style-fourteen .main-title {font-size: 58px;}
@@ -171,7 +171,7 @@
   .fancy-feature-thirtyFive .top-banner .rating li {font-size: 15px;}
   .fancy-feature-thirtyFive .img-holder .card-style h3 {margin-bottom: 0;}
   .card-style-sixteen {padding: 50px 12px 70px;}
-  .title-style-one .sc-title {font-size: 13px;}
+  .title-style .sc-title {font-size: 13px;}
   .accordion-style-five .accordion-button {font-size: 20px; padding: 18px 15px;}
   .accordion-style-five .accordion-body p,
   .fancy-feature-thirtySeven .block-wrapper p {font-size: 16px; line-height: 30px;}
@@ -353,7 +353,7 @@
   .counter-block-one .icon-bg {width: 170px; height: 240px; padding-top: 50px; border-radius: 100px;}
   .counter-block-one .icon-img {height: 80px;}
   .counter-block-one .main-count {font-size: 40px;}
-  .title-style-five .sc-title {font-size: 14px; padding-bottom: 10px;}
+  .page-title-style .sc-title {font-size: 14px; padding-bottom: 10px;}
   .feedback-section-four .slider-wrapper {margin: 0;}
   .feedback-block-four {padding: 30px 20px;}
   .feedback-section-four .slider-wrapper .item {margin: 0 12px;}
@@ -515,7 +515,7 @@
   .title-style-six .main-title {font-size: 48px;}
   .title-style-eleven .main-title,.fancy-short-banner-fifteen .title {font-size: 48px;}
   .title-style-three .main-title {font-size: 48px;}
-  .title-style-five .main-title {font-size: 50px;}
+  .page-title-style .main-title {font-size: 50px;}
   .hero-banner-thirteen .hero-heading {font-size: 55px;}
   .hero-banner-eight .hero-heading {font-size: 55px;}
   .hero-banner-three .hero-heading {font-size: 58px;}
@@ -600,7 +600,7 @@
   .title-style-eight .main-title,
   .fancy-short-banner-six .block-wrapper .main-title {font-size: 35px; letter-spacing: -0.5px;}
   .title-style-eleven .main-title {font-size: 34px;}
-  .title-style-five .main-title,.fancy-short-banner-fifteen .title {font-size: 35px;}
+  .page-title-style .main-title,.fancy-short-banner-fifteen .title {font-size: 35px;}
   .hero-banner-three .hero-heading {font-size: 35px;}
   .hero-banner-eight .hero-heading {font-size: 35px; line-height: 1.25em; letter-spacing: -0.5px;}
   .title-style-three .main-title {text-align: center; font-size: 32px; font-weight: 600; line-height: 1.2em;}

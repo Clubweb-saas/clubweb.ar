@@ -7,6 +7,7 @@
 @import url('../fonts/gordita/stylesheet.css');
 @import url('../fonts/eustache/stylesheet.css');
 @import url('../fonts/noteworthy/style.css');
+@import url("https://use.typekit.net/ntp3pwb.css");
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 /*----Bootstrap css ----- */
@@ -232,45 +233,26 @@ p {line-height: 1.4em;}
   width: 90%;
   opacity: 1;
 }
-/*^^^^^^^^^^^^^^^^^^^^ Section Title ^^^^^^^^^^^^^^^^^^^^^^*/
-.title-style-one .sc-title {
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: rgba(0, 0, 0, 0.3);
-  margin-bottom: 8px;
-}
-.title-style-one .main-title span {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-.title-style-one .main-title span:before {
-  content: '';
-  position: absolute;
-  left: 4px;
-  bottom: 10px;
-  width: 98%;
-  height: 12px;
-  background: rgba(255, 139, 37, 0.4);
-  z-index: -1;
-}
-.title-style-two .sc-title {font-size: 20px; padding-bottom: 5px; color: #F96F60;}
-.title-style-two .main-title {font-size: 48px; line-height: 1.20em;}
-.title-style-three .sc-title {
+/*^^^^^^^^^^^^^^^^^^^^ Title Style ^^^^^^^^^^^^^^^^^^^^^^*/
+.title-style .sc-title {
   font-size: 14px;
   letter-spacing: 1px;
   padding-bottom: 10px; 
   color: rgba(0, 0, 0, 0.3);
 }
-.title-style-three .main-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+.title-style .main-title {
+  font-family: 'tt-travels-next', sans-serif;
   font-size: 40px; 
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
   letter-spacing: 0px;
 }
-.title-style-three .main-title>span {z-index: 1;}
-.title-style-three .main-title .mark-bg {
+.title-style .main-title span {
+  font-weight: 700;
+  font-style: italic;
+  z-index: 1;
+}
+.title-style .main-title .mark-bg {
   position: absolute;
   left: -5px;
   top: 50%;
@@ -279,52 +261,26 @@ p {line-height: 1.4em;}
   height: 50px;
   z-index: -1;
 }
-.title-style-three .icon {
+.title-style .icon {
   width: 90px;
   height: 90px;
   margin: 0 auto 45px;
 }
-.title-style-four .main-title {letter-spacing: -1.5px;}
-.title-style-four .main-title span {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-.title-style-four .main-title span:before {
-  content: '';
-  position: absolute;
-  left: 3px;
-  bottom: 13px;
-  width: 97%;
-  height: 12px;
-  background: #FF5BD7;
-  opacity: 0.5;
-  z-index: -1;
-}
-.title-style-four .sc-title {
-  font-size: 20px; 
-  padding-bottom: 30px; 
-  color: rgba(0, 0, 0, 0.3);
-}
-.title-style-four .sc-title-two {
-  font-size: 15px;
-  letter-spacing: 3px;
-  text-transform: uppercase; 
-  padding-bottom: 22px; 
-}
-.title-style-five .sc-title {
+
+/*^^^^^^^^^^^^^^^^^^^^ Page Title ^^^^^^^^^^^^^^^^^^^^^^*/
+.page-title-style .sc-title {
   font-size: 16px;
   color: #BEBEBE;
   letter-spacing: 4px;
   padding-bottom: 20px;
 }
-.title-style-five .sc-title-two {
+.page-title-style .sc-title-two {
   font-size: 17px;
   color: var(--prime-one);
   padding-left: 30px;
   margin-bottom: 20px;
 }
-.title-style-five .sc-title-two:before {
+.page-title-style .sc-title-two:before {
   content: '';
   position: absolute;
   width: 20px;
@@ -333,13 +289,13 @@ p {line-height: 1.4em;}
   left: 0;
   top: 14px;
 }
-.title-style-five .main-title {
+.page-title-style .main-title {
   font-size: 56px;
   line-height: 1.25em;
 }
-.title-style-five .main-title>span {z-index: 1;}
-.title-style-five .main-title>span .line-shape {left: 0; bottom: -5%;}
-.title-style-five .main-title .mark-bg {
+.page-title-style .main-title>span {z-index: 1;}
+.page-title-style .main-title>span .line-shape {left: 0; bottom: -5%;}
+.page-title-style .main-title .mark-bg {
   position: absolute;
   left: 0;
   bottom: 17px;
@@ -347,135 +303,7 @@ p {line-height: 1.4em;}
   height: 13px;
   z-index: -1;
 }
-.title-style-six .sc-title {
-  font-family: 'Noteworthy Light';
-  font-size: 20px;
-  letter-spacing: 3px;
-  padding-bottom: 6px;
-  text-transform: uppercase;
-}
-.title-style-six .sc-title-two {
-  font-size: 15px;
-  letter-spacing: 2px;
-  padding-bottom: 8px;
-  color: var(--prime-ten);
-}
-.title-style-six .main-title {
-  font-size: 62px;
-  line-height: 1.32em;
-}
-.title-style-seven .main-title {
-  font-size: 68px;
-  line-height: 1.35em;
-  letter-spacing: -2px;
-}
-.title-style-seven .main-title span img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: -1;
-  max-width: 113%;
-  transform: translate(-50% , -50%);
-}
-.title-style-eight .sc-title {
-  font-size: 13px;
-  letter-spacing: 3px;
-  color: rgba(0, 0, 0, 0.5);
-  padding-bottom: 15px;
-}
-.title-style-eight .main-title {
-  font-size: 68px;
-  line-height: 1.25em;
-  letter-spacing: -1px;
-}
-.title-style-eight .main-title span {line-height: 64px;}
-.title-style-eight .main-title span:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: var(--prime-six);
-}
-.title-style-nine .sc-title {
-  font-size: 18px; 
-  padding-bottom: 16px; 
-  color: rgba(255, 255, 255, 0.3);
-}
-.title-style-nine .main-title span {
-  background: linear-gradient(270.78deg, #FFA7A9 4.19%, #FF5EA3 96.11%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.title-style-ten .sc-title {
-  font-size: 15px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--prime-nine);
-  padding-bottom: 16px;
-}
-.title-style-ten .main-title {letter-spacing: 0; line-height: 1.17em;}
-.title-style-ten .main-title img {
-  position: absolute;
-  bottom: 9px;
-  left: 0;
-  z-index: -1;
-}
-.title-style-eleven .main-title {
-  font-size: 64px;
-  line-height: 1.25em;
-  letter-spacing: -2px;
-}
-.title-style-eleven .sc-title {
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: rgba(0, 0, 0, 0.3);
-  margin-bottom: 15px;
-}
-.title-style-twelve .sc-title {
-  font-size: 17px;
-  color: var(--prime-ten);
-  padding-left: 40px;
-  margin-bottom: 12px;
-}
-.title-style-twelve .sc-title:before {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 1px;
-  background: var(--prime-ten);
-  left: 0;
-  top: 14px;
-}
-.title-style-twelve .main-title {
-  font-size: 62px;
-  line-height: 1.15em;
-}
-.title-style-thirteen .main-title {
-  font-size: 55px;
-  letter-spacing: 0px;
-  line-height: 1.17em;
-}
-.title-style-fourteen .sc-title {
-  font-size: 15px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--prime-nine);
-  padding-bottom: 16px;
-}
-.title-style-fourteen .main-title {
-  font-size: 86px;
-  letter-spacing: 0; 
-  line-height: 1.17em;
-}
-.title-style-fourteen .main-title img {
-  position: absolute;
-  bottom: 9px;
-  left: 0;
-  z-index: -1;
-}
+
 /*^^^^^^^^^^^^^^^^^^^^^ Theme Button ^^^^^^^^^^^^^^^^^^^^^^*/
 .ripple-btn {position: relative;}
 .ripple-btn:before {
@@ -1810,7 +1638,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 .hero-banner-two {
   /*height: 1200px; */
   background-color: var(--prime-eleven);
-  padding-top: 280px;
+  padding-top: 260px;
   /*background-image: url('../images/media/hero-bg-04-c.jpg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta real de tu imagen */
   /*background-position: top;
   /*background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
@@ -1843,16 +1671,21 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
   max-width: 112px;
 }
 .hero-banner-two .hero-heading {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
+  font-family: "tt-travels-next", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
   line-height: 1.00em;
 }
 .hero-banner-two h1, p {
   color: var(--prime-one);
 }
 
-.hero-banner-two .hero-heading span {z-index: 1;}
+.hero-banner-two .hero-heading span {
+  font-family: "tt-travels-next", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  z-index: 1;
+}
 .hero-banner-two .hero-heading span:before {
   content: '';
   position: absolute;
@@ -1861,7 +1694,6 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
   transform: translateY(-50%);
   width: 73%;
   height: 81%;
-  background: #FFEBE5;
   z-index: -1;
 }
 .hero-banner-two .hero-heading .line-shape {left: 3%;top: 45%;}
@@ -2386,7 +2218,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 /*^^^^^^^^^^^^^^^^^^^^^ Footer Two ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .footer-style-two {background-color: var(--prime-eleven); padding: 0 10%;}
 .footer-style-two .top-footer {
-  border: 1px dashed var(--prime-one);
+  background-color: #dcffdc;
   border-radius: 40px;
   padding: 40px 50px 20px;
   z-index: 1;
