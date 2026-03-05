@@ -2021,6 +2021,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
   bottom: -11%;
   left: 12%;
   animation: jumpThree 4s infinite linear;
+  z-index: 1;
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Pricing Section One ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .pricing-nav-one .nav-item .nav-link {
@@ -3405,7 +3406,7 @@ body .btn-twentySix:hover:after {top: 0; left: 0;}
 }
 .fancy-feature-seventeen .shape-four {right: 0;top: -5%;}
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section Eighteen ^^^^^^^^^^^^^^^^^^^^^^^^*/
-.fancy-feature-eighteen {}
+
 .card-style-nine {
   height: 430px;
   width: 33.3333%;
