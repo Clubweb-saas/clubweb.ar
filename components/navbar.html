@@ -1,0 +1,95 @@
+<header class="cw-navbar-wrapper">
+  <!-- Barra de aviso superior -->
+  <div class="cw-notice-bar">
+    Promoción lanzamiento! Aprovechá 30 días Gratis con cualquiera de nuestros planes. —
+    <a href="https://app.clubweb.ar/crear-club-gratis">Crear club gratis</a>
+  </div>
+
+  <!-- Navbar flotante -->
+  <nav class="cw-floating-nav" id="cwFloatingNav" aria-label="Navegación principal">
+
+    <!-- Logo -->
+    <a href="index.html" class="cw-nav-logo" aria-label="Clubweb - Inicio">
+      <img src="images/logo/logo_01.png" alt="Clubweb" class="cw-logo-img">
+    </a>
+
+    <div class="cw-nav-divider"></div>
+
+    <!-- Links de navegación (desktop) -->
+    <ul class="cw-nav-links" role="list">
+      <li><a class="cw-nav-link cw-hide-tablet" href="index.html">Inicio</a></li>
+      <li><a class="cw-nav-link cw-hide-tablet" href="planes-y-precios.html">Precios</a></li>
+      <li><a class="cw-nav-link cw-hide-tablet" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+    </ul>
+
+    <!-- Selector de país -->
+    <div class="cw-lang-wrapper cw-hide-mobile">
+      <button class="cw-lang-btn dropdown-toggle" type="button"
+              id="cwLangDropdown" data-bs-toggle="dropdown"
+              data-bs-auto-close="true" aria-expanded="false"
+              aria-label="Seleccionar país">
+        AR
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="cwLangDropdown">
+        <li><a class="dropdown-item">UY - Uruguay <span class="cw-soon">Próximamente</span></a></li>
+        <li><a class="dropdown-item">CL - Chile <span class="cw-soon">Próximamente</span></a></li>
+        <li><a class="dropdown-item">BR - Brasil <span class="cw-soon">Próximamente</span></a></li>
+      </ul>
+    </div>
+
+    <div class="cw-nav-divider cw-hide-mobile"></div>
+
+    <!-- Botones de acción -->
+    <div class="cw-nav-actions">
+      <a href="https://app.clubweb.ar/entrar" class="cw-login-btn cw-hide-mobile">
+        <img src="images/icon/icon_121.svg" alt="" width="13" aria-hidden="true">
+        <span>Entrar</span>
+      </a>
+      <a href="https://app.clubweb.ar/crear-club-gratis" class="cw-signup-btn">
+        Crear club gratis
+      </a>
+    </div>
+
+    <!-- Botón hamburguesa (mobile) -->
+    <button class="cw-toggler cw-show-mobile" id="cwToggler"
+            aria-expanded="false" aria-controls="cwMobileMenu"
+            aria-label="Abrir menú">
+      <span></span>
+    </button>
+
+  </nav>
+
+  <!-- Menú mobile desplegable -->
+  <div class="cw-mobile-menu cw-show-mobile" id="cwMobileMenu" aria-hidden="true">
+    <div class="cw-mobile-inner">
+      <a href="index.html" class="cw-mobile-logo">
+        <img src="images/logo/logo_01.png" alt="Clubweb" width="110">
+      </a>
+      <ul role="list">
+        <li><a class="cw-mobile-link" href="index.html">Inicio</a></li>
+        <li><a class="cw-mobile-link" href="planes-y-precios.html">Precios</a></li>
+        <li><a class="cw-mobile-link" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+      </ul>
+      <div class="cw-mobile-actions">
+        <a href="https://app.clubweb.ar/crear-club-gratis" class="cw-signup-btn">Crear club gratis</a>
+        <a href="https://app.clubweb.ar/entrar" class="cw-login-btn-mobile">
+          <img src="images/icon/icon_121.svg" alt="" width="13" aria-hidden="true">
+          Entrar
+        </a>
+      </div>
+      <div class="cw-mobile-lang">
+        <button class="cw-lang-btn dropdown-toggle" type="button"
+                id="cwLangDropdownMobile" data-bs-toggle="dropdown"
+                data-bs-auto-close="true" aria-expanded="false">
+          AR
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="cwLangDropdownMobile">
+          <li><a class="dropdown-item">UY - Uruguay <span class="cw-soon">Próximamente</span></a></li>
+          <li><a class="dropdown-item">CL - Chile <span class="cw-soon">Próximamente</span></a></li>
+          <li><a class="dropdown-item">BR - Brasil <span class="cw-soon">Próximamente</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</header>

@@ -1,0 +1,337 @@
+/* ============================================================
+   Clubweb — Floating Navbar
+   Archivo: css/floating-navbar.css
+   ============================================================ */
+
+/* ---------- Variables locales ---------- */
+:root {
+  --cw-main-black:    #1C1B22;
+  --cw-main-white:    #FFFFFF;
+  --cw-main-accent:   #CFFBCF;
+  --cw-nav-bg:        rgba(255, 255, 255, 0.82);
+  --cw-nav-border:    rgba(0, 0, 0, 0.09);
+  --cw-nav-shadow:    0 4px 24px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --cw-nav-radius:    999px;
+  --cw-text-main:     #0D1A0D;
+  --cw-text-muted:    rgba(13, 26, 13, 0.52);
+  --cw-text-white:    #FFFFFF;
+  --cw-accent:        #1C1B22;
+  --cw-accent-light:  #CFFBCF;
+  --cw-hover-bg:      rgba(13, 26, 13, 0.05);
+  --cw-notice-bg:     #1C1B22;
+  --cw-notice-text:   #CFFBCF;
+  --cw-notice-link:   #6ae66a;
+}
+
+/* ---------- Barra de aviso ---------- */
+.cw-notice-bar {
+  background: var(--cw-notice-bg);
+  color: var(--cw-notice-text);
+  font-size: 12px;
+  text-align: center;
+  padding: 9px 20px;
+  line-height: 1.4;
+}
+.cw-notice-bar a {
+  color: var(--cw-notice-link);
+  font-weight: 600;
+  text-decoration: none;
+}
+.cw-notice-bar a:hover { text-decoration: underline; }
+
+/* ---------- Wrapper ---------- */
+.cw-navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* ---------- Navbar flotante ---------- */
+.cw-floating-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--cw-nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--cw-nav-border);
+  border-radius: var(--cw-nav-radius);
+  box-shadow: var(--cw-nav-shadow);
+  padding: 10px 12px;
+  margin: 20px auto;
+  width: fit-content;
+  max-width: calc(100vw - 40px);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Sombra más pronunciada al hacer scroll */
+.cw-navbar-wrapper.scrolled .cw-floating-nav {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13), 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.80);
+}
+
+/* ---------- Logo ---------- */
+.cw-nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+.cw-logo-img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+/* ---------- Divisor vertical ---------- */
+.cw-nav-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--cw-nav-border);
+  flex-shrink: 0;
+  margin: 0 4px;
+}
+
+/* ---------- Links de navegación ---------- */
+.cw-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cw-nav-link {
+  display: block;
+  color: var(--cw-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 8px 14px;
+  border-radius: var(--cw-nav-radius);
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+.cw-nav-link:hover,
+.cw-nav-link.active {
+  color: var(--cw-text-main);
+  background: var(--cw-hover-bg);
+}
+
+/* ---------- Selector de idioma ---------- */
+.cw-lang-wrapper { position: relative; }
+.cw-lang-btn {
+  background: transparent;
+  border: 1px solid var(--cw-nav-border);
+  border-radius: var(--cw-nav-radius);
+  color: var(--cw-text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.cw-lang-btn:hover { color: var(--cw-text-main); background: var(--cw-hover-bg); }
+.cw-lang-btn::after { font-size: 10px; margin-left: 4px; }
+.cw-soon {
+  font-size: 10px;
+  color: var(--cw-text-muted);
+  margin-left: 4px;
+}
+
+/* ---------- Botones de acción ---------- */
+.cw-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 4px;
+}
+.cw-login-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--cw-text-main);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 8px 14px;
+  border-radius: var(--cw-nav-radius);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.cw-login-btn:hover { color: var(--cw-text-main); background: var(--cw-hover-bg); }
+
+.cw-signup-btn {
+  display: inline-block;
+  background: var(--cw-accent);
+  color: var(--cw-text-white);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 8px 14px;
+  border-radius: var(--cw-nav-radius);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+.cw-signup-btn:hover {
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* ---------- Hamburguesa ---------- */
+.cw-toggler {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.cw-toggler span,
+.cw-toggler::before,
+.cw-toggler::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--cw-text-main);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  position: absolute;
+}
+.cw-toggler::before { transform: translateY(-6px); }
+.cw-toggler span     { transform: translateY(0); }
+.cw-toggler::after  { transform: translateY(6px); }
+
+.cw-toggler[aria-expanded="true"] span { opacity: 0; }
+.cw-toggler[aria-expanded="true"]::before { transform: rotate(45deg); }
+.cw-toggler[aria-expanded="true"]::after  { transform: rotate(-45deg); }
+
+/* ---------- Menú mobile ---------- */
+.cw-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  max-width: calc(100vw - 60px);
+  background: #fff;
+  border-radius: 0 24px 24px 0;
+  box-shadow: 15px 0 40px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+.cw-mobile-menu.open {
+  transform: translateX(0);
+}
+.cw-mobile-inner {
+  padding: 40px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.cw-mobile-logo img { height: 28px; width: auto; }
+
+.cw-mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cw-mobile-link {
+  display: block;
+  color: var(--cw-text-main);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 11px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.cw-mobile-link:hover { background: var(--cw-hover-bg); }
+
+.cw-mobile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cw-mobile-actions .cw-signup-btn { text-align: center; padding: 12px 18px; }
+.cw-login-btn-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--cw-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 10px;
+  border-radius: var(--cw-nav-radius);
+  text-decoration: none;
+  border: 1px solid var(--cw-nav-border);
+  transition: all 0.2s ease;
+}
+.cw-login-btn-mobile:hover { background: var(--cw-hover-bg); color: var(--cw-text-main); }
+
+/* Overlay oscuro detrás del menú mobile */
+.cw-mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  backdrop-filter: blur(2px);
+}
+.cw-mobile-overlay.open { display: block; }
+
+/* ---------- Espacio para compensar el header fijo ---------- */
+body { padding-top: 0px; } /* notice-bar (~37px) + nav (~45px) + margen (10px) */
+
+/* ---------- Responsive ---------- */
+
+/* Tablet: ≤ 991px */
+@media (max-width: 991px) {
+  .cw-hide-tablet { display: none !important; }
+  .cw-nav-logo { padding-right: 8px; }
+  .cw-logo-img { height: 24px; }
+}
+
+/* Mobile: ≤ 767px */
+@media (max-width: 767px) {
+  .cw-hide-mobile  { display: none !important; }
+  .cw-show-mobile  { display: flex !important; }
+  .cw-toggler      { display: flex; }
+
+  .cw-floating-nav { gap: 2px; padding: 6px 8px; }
+  .cw-nav-links    { gap: 0; }
+  .cw-nav-link     { padding: 6px 8px; font-size: 13px; }
+  .cw-signup-btn   { padding: 7px 13px; font-size: 13px; }
+
+  body { padding-top: 40px; }
+}
+
+/* Ocultar en desktop lo que es solo mobile */
+@media (min-width: 768px) {
+  .cw-show-mobile  { display: none !important; }
+  .cw-mobile-menu  { display: none !important; }
+}
