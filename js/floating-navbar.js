@@ -20,7 +20,7 @@
       } else {
         document.body.insertAdjacentHTML("afterbegin", html);
       }
-      initNavbar();
+      requestAnimationFrame(initNavbar);  // ← cambio acá
     })
     .catch(function (err) {
       console.warn("Navbar:", err.message);
@@ -28,22 +28,19 @@
 
   // ── 2. Inicializar comportamientos ───────────────────────────
   function initNavbar() {
-    setTimeout(function() {
-      markActiveLink();
-    }, 50);
+    markActiveLink();  // ← directo, sin setTimeout
     initMobileMenu();
     initScrollEffect();
   }
 
   // ── 3. Marcar el link activo según la página actual ──────────
   function markActiveLink() {
-    var currentPage = window.location.pathname.split("/").pop() || "index.html";
+    var currentPage = window.location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
     var links = document.querySelectorAll(".cw-nav-link, .cw-mobile-link");
     links.forEach(function (link) {
       var href = link.getAttribute("href") || "";
       // Ignorar links que son solo anclas (#seccion) — pertenecen a index
-      var linkPage = href.startsWith("#") ? "index.html" : href.split("/").pop().split("#")[0];
-      // No marcar si linkPage quedó vacío
+      var linkPage = href.startsWith("#") ? "index" : href.split("/").pop().split("#")[0].replace(/\.html$/, "");      // No marcar si linkPage quedó vacío
       if (!linkPage) return;
       if (
         linkPage === currentPage ||
