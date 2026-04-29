@@ -8,7 +8,7 @@
   --cw-main-black:    #1C1B22;
   --cw-main-white:    #FFFFFF;
   --cw-main-accent:   #CFFBCF;
-  --cw-nav-bg:        rgba(255, 255, 255, 0.82);
+  --cw-nav-bg:        rgba(255, 255, 255, 0.9);
   --cw-nav-border:    rgba(0, 0, 0, 0.09);
   --cw-nav-shadow:    0 4px 24px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
   --cw-nav-radius:    999px;
@@ -20,7 +20,7 @@
   --cw-hover-bg:      rgba(13, 26, 13, 0.05);
   --cw-notice-bg:     #1C1B22;
   --cw-notice-text:   #CFFBCF;
-  --cw-notice-link:   #6ae66a;
+  --cw-notice-link:   #77ee77;
 }
 
 /* ---------- Barra de aviso ---------- */
